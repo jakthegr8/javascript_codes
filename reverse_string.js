@@ -17,9 +17,16 @@ function reverse_str_3(str) {
   return reversed;
 }
 
-// Method 4. Reverse index reversing
-// Method 5. Middle pivot switch reversing
+// Method 4. Reduce
+function reverse_str_4(str) {
+  return str.split('').reduce((rev, char) => char + rev, '');
+}
+
+
+// Method 5. Reverse index reversing
+// Method 6. Middle pivot switch reversing
 
 console.log(reverse_str_1('Arun'));
 console.log(reverse_str_2('Arun'));
 console.log(reverse_str_3('Arun'));
+console.log(reverse_str_4('Arun'));
