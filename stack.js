@@ -1,8 +1,8 @@
 class Stack {
-	constructor() { this.data = []; }
-	add(ele) { this.data.push(ele); }
-	remove() { this.data.pop(); }
-	print() { console.log(this.data); }
+  constructor() { this.data = []; }
+  add(ele) { this.data.push(ele); }
+  remove() { this.data.pop(); }
+  print() { console.log(this.data); }
 }
 
 let stack = new Stack();
