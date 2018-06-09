@@ -1,8 +1,8 @@
 class Queue {
-  constructor() { this.data = []; }
-  add(ele) { this.data.unshift(ele); }
-  remove() { this.data.pop(); }
-  print() { console.log(this.data);}
+	constructor() { this.data = []; }
+	add(ele) { this.data.unshift(ele); }
+	remove() { this.data.pop(); }
+	print() { console.log(this.data); }
 }
 
 let q = new Queue();
