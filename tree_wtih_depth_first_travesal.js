@@ -18,12 +18,12 @@ class Tree {
     this.root = root
   }
 
-  traverseBF() {
+  traverseDF() {
     let arr = [this.root];
     while (arr.length) {
       let firstNode = arr.shift();
       console.log(firstNode.data);
-      arr.push(...firstNode.children)
+      arr.unshift(...firstNode.children)
     }
   }
 }
@@ -37,4 +37,4 @@ node.children[1].add(6)
 node.children[1].add(7)
 
 let tree = new Tree(node);
-tree.traverseBF()
+tree.traverseDF()
